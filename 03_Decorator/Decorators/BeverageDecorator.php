@@ -14,6 +14,6 @@ abstract class BeverageDecorator extends Beverage
 
   public function cost()
   {
-    $this->beverage->cost() +  $this->cost;
+    return $this->beverage->cost() +  $this->cost;
   }
 }

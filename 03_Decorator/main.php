@@ -1,18 +1,29 @@
 <?php
 namespace Decorator;
 use Decorator\Beverages\Decaf;
+use Decorator\Beverages\Esupuresso;
 use Decorator\Decorators\Milk;
 use Decorator\Decorators\Whip;
 
 include 'include.php';
 
 $decaf = new Decaf();
-$milk = new Milk($decaf);
-var_dump($milk);
-// $milk->getDescription();
-// $milk->cost();
+echo $decaf->getDescription();
+echo $decaf->cost().'円';
+echo "\n";
 
-// $whip = new Whip($milk);
-// $whip->getDescription();
-// $whip->cost();
+$esupuresso = new Esupuresso();
+echo $esupuresso->getDescription();
+echo $esupuresso->cost().'円';
+echo "\n";
+
+$milk = new Milk($decaf);
+echo $milk->getDescription();
+echo $milk->cost().'円';
+echo "\n";
+
+$whip = new Whip($esupuresso);
+echo $whip->getDescription();
+echo $whip->cost().'円';
+echo "\n";
 
