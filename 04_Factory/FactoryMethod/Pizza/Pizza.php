@@ -10,24 +10,24 @@ abstract class Pizza
   
   public function prepare()
   {
-    echo $this->dough.'の'.$this->name.'を作成します';
-    echo '生地をこねる。';
-    echo $this->souce.'を追加';
-    echo 'トッピングを追加。';
+    echo $this->dough.'の'.$this->name."を作成します\n";
+    echo "生地をこねる。\n";
+    echo $this->souce."を追加\n";
+    echo "トッピングを追加。\n";
   }
   
   public function bake()
   {
-    echo '180度で25分';
+    echo "180度で25分焼く\n";
   }
   
   public function cut(){
-    echo 'ピザを扇型にカットする。';
+    echo "ピザを扇型にカットする。\n";
   }
   
   public function box()
   {
-    echo '箱に入れる。';
+    echo "箱に入れる。\n";
   }
 
 }
