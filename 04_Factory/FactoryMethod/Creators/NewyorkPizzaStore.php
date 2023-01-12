@@ -1,4 +1,8 @@
 <?php
+namespace Factory\FactoryMethod\Creators;
+use Factory\FactoryMethod\Pizza\Pizza;
+use Factory\FactoryMethod\Pizza\NewyorkCheesePizza;
+use Factory\FactoryMethod\Pizza\NewyorkTomatoPizza;
 
 class NewyorkPizzaStore extends PizzaStore
 {

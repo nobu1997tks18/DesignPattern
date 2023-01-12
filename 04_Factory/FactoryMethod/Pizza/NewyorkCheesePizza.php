@@ -1,5 +1,7 @@
 <?php
 
+namespace Factory\FactoryMethod\Pizza;
+
 class NewyorkCheesePizza extends Pizza
 {
   public function __construct()

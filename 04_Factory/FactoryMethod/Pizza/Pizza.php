@@ -1,5 +1,7 @@
 <?php
 
+namespace Factory\FactoryMethod\Pizza;
+
 abstract class Pizza
 {
   protected string $name;

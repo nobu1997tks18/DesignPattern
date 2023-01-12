@@ -1,5 +1,8 @@
 <?php
 
+namespace Factory\FactoryMethod\Creators;
+use Factory\FactoryMethod\Pizza\Pizza;
+
 abstract class PizzaStore
 {
   public function order(string $menu)
