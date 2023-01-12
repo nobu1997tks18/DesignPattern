@@ -2,17 +2,22 @@
 
 namespace Factory\FactoryMethod\Pizza;
 
+use Factory\AbstructFactory\Ingreadients\Dough;
+use Factory\AbstructFactory\Ingreadients\Source;
+use Factory\AbstructFactory\PizzaIngreadientFactory;
+
 abstract class Pizza
 {
   protected string $name;
-  protected string $souce;
-  protected string $dough;
-  
+  protected Source $souce;
+  protected Dough $dough;
+  protected PizzaIngreadientFactory $ingreadient;
+
   public function prepare()
   {
-    echo $this->dough.'の'.$this->name."を作成します\n";
+    echo $this->dough->displayName().'の'.$this->name."を作成します\n";
     echo "生地をこねる。\n";
-    echo $this->souce."を追加\n";
+    echo $this->souce->displayName()."を追加\n";
     echo "トッピングを追加。\n";
   }
   
