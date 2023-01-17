@@ -4,6 +4,7 @@ namespace AdapterAndFacade;
 use AdapterAndFacade\Adapter\MallardDuck;
 use AdapterAndFacade\Adapter\WildTurkey;
 use AdapterAndFacade\Adapter\TurkeyAdapter;
+use AdapterAndFacade\Facade\RoutineFacade;
 
 include 'include.php';
 
@@ -16,3 +17,5 @@ $duck->fly();
 $adapter->quack();
 $adapter->fly();
 
+$routine = new RoutineFacade();
+$routine->morning_routine();
