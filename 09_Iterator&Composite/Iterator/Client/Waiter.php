@@ -19,10 +19,7 @@ class Waiter
   {
     while ($this->menu_list->hasNext()) {
       $menu = $this->menu_list->next();
-      var_dump($menu);
-      // while ($menu->hasNext()) {
-      //   $this->printIterator($menu->next());
-      // }
+      $this->printIterator($menu->createIterator());
     }
   }
 
