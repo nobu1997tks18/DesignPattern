@@ -18,7 +18,6 @@ class GumballMachine
   private State $winner_state;
   private State $state;
   private int $count = 0;
-  private int $refill_count = 0;
 
   public function __construct(int $count)
   {
@@ -29,7 +28,7 @@ class GumballMachine
     $this->winner_state = new WinnerState($this);
 
     $this->count = $count;
-    $this->refill_count = ($this->count / 2);
+
     if ($this->count > 0) {
       $this->state = $this->no_quarter_state;
       return;
